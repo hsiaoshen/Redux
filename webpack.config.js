@@ -14,7 +14,8 @@ module.exports = {
   entry: [
     'webpack/hot/dev-server',
     'webpack-dev-server/client?http://localhost:8080',
-    path.resolve(__dirname, 'app/main.jsx')
+    //path.resolve(__dirname, 'app/main.jsx')
+    path.resolve(__dirname, 'app/click.js')
   ],
   output: {
     path: __dirname + '/build',

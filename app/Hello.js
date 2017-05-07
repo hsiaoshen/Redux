@@ -2,12 +2,13 @@ import { connect } from 'react-redux';
 import Myclick from './myClick';
 function mapStateToProps(state) {
   return {
-    number: state.number + 1
+    text: state.text,
+    number: state.number
   };
 }
 function mapDispatchToProps(dispatch){
   return {
-    onClick: (e) => dispatch({
+    handleClick: () => dispatch({
       type: 'change'
     })
   }
